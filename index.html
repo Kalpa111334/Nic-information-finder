@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIC Information Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="/nic-information-finder/img/favicon.ico"/>
+
+        <!-- SEO Meta Tags -->
+    <meta name="description" content="A concise and relevant description of your page content.">
+    <meta name="keywords" content="Keywords related to your content, separated by commas">
+    <meta name="author" content="Your Name or Your Company Name">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="A concise and relevant description of your page content.">
+    <meta property="og:image" content="URL to an image related to your content">
+    <meta property="og:url" content="URL of your page">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="A concise and relevant description of your page content.">
+    <meta name="twitter:image" content="URL to an image related to your content">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="URL of your preferred version of the page">
+
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="noindex" />
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h3>නිර්මාතෘ :- කල්ප විශ්වජිත්</h3>
+        <h2>ජාතික හැඳුනුම් පතෙහි තොරතුරු සොයමු</h2>
+        <form>
+            <label for="nic">හැඳුනුම් පත් අංකය ඇතුලත් කරන්න :</label>
+            <input type="text" id="nic" placeholder="Enter NIC number..." maxlength="12" required>
+            <div class="button-group">
+                <button type="button" id="find">තොරතුරු සොයා</button>
+                <button type="reset">යළි පිහිටුවීම</button>
+            </div>
+        </form>
+
+        <div id="result">
+            <p id="error"></p>
+            <p><strong>ස්ත්රී පුරුෂ භාවය:</strong> <span id="gender"></span></p>
+            <p><strong>උපන්දිනය:</strong> <span id="dob"></span></p>
+            <p><strong>වයස:</strong> <span id="age"></span></p>
+        </div>
+    </div>
+</body>
+</html>
